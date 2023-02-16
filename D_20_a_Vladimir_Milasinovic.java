@@ -1,0 +1,15 @@
+package DomaciOOP3;
+
+public class Fizikalac extends Radnik {
+    public Fizikalac(int ID, String nazivRadnika, int godineIskustva, int plata) {
+        super(ID, nazivRadnika, godineIskustva, plata);
+    }
+
+    public void stampa3() {
+        if (godineIskustva > 5) {
+            System.out.println("Kako " + this.nazivRadnika + " ima vise od " + this.godineIskustva + " godina iskustva, plata se uvecava za 20%, pa je umesto sadasnje od " + this.plata + " eura, sada " + (this.plata * 1.2) + " eura.");
+        } else {
+            System.out.println("Kako " + this.nazivRadnika + " ima manje od " + this.godineIskustva + " godine iskustva, pa je plata " + this.plata + " eura.");
+        }
+    }
+}
